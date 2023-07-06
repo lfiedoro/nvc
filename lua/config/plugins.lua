@@ -10,11 +10,15 @@ return require('packer').startup(function(use)
     -- themes
     use 'davidosomething/vim-colors-meh'
     use 'Mofiqul/vscode.nvim'
+    use { 'catppuccin/nvim', as = 'catppuccin' }
+    use { 'projekt0n/github-nvim-theme' }
+    use { 'sainnhe/edge' }
+    use { 'aktersnurra/no-clown-fiesta.nvim' }
     use 'nvim-lua/plenary.nvim'
-    use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-    use 'nvim-telescope/telescope-symbols.nvim'
-    use 'nvim-telescope/telescope.nvim'
-    use 'nvim-telescope/telescope-file-browser.nvim'
+    --use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+    --use 'nvim-telescope/telescope-symbols.nvim'
+    use { 'nvim-telescope/telescope.nvim', tag = '0.1.0' }
+    --use 'nvim-telescope/telescope-file-browser.nvim'
     use 'nvim-treesitter/nvim-treesitter'
     use 'neovim/nvim-lspconfig'
     use 'mfussenegger/nvim-dap'

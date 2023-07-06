@@ -37,7 +37,7 @@ end
 local capabilities = require 'cmp_nvim_lsp'.default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 local lspconfig = require 'lspconfig'
-local servers = { 'clangd', 'pylsp', 'rust_analyzer', 'lua_ls', 'solargraph' }
+local servers = { 'clangd', 'pylsp', 'rust_analyzer', 'solargraph', 'bashls' }
 for _, lsp in ipairs(servers) do
     lspconfig[lsp].setup {
         on_attach = on_attach,

@@ -3,7 +3,7 @@ vim.g.mapleader = " "
 vim.o.mouse = ""
 
 -- set some nice theme
-vim.cmd [[colorscheme vscode]]
+vim.cmd [[colorscheme catppuccin]]
 
 -- show relative line numbers in each window
 -- and use number column for signs
